@@ -22,19 +22,19 @@
  
        
  
-        <p:column headerText="IdCategoria" filterBy="#{item.idCategoria}" sortBy="#{item.idCategoria}" filterMatchMode="contains">
+            <p:column headerText="#{generalProperties['tbl.id']}" filterBy="#{item.idCategoria}" sortBy="#{item.idCategoria}" filterMatchMode="contains">
             <h:outputText value="#{item.idCategoria}" />
         </p:column>
  
-        <p:column headerText="nombre" filterBy="#{item.nombre}" sortBy="#{item.nombre}" filterMatchMode="startsWith">
+            <p:column headerText="#{generalProperties['tbl.nombre']}" filterBy="#{item.nombre}" sortBy="#{item.nombre}" filterMatchMode="startsWith">
             <h:outputText value="#{item.nombre}" />
         </p:column>
                      
-                     <p:column headerText="Activo" filterBy="#{item.activo}" sortBy="#{item.activo}" filterMatchMode="startsWith">
+            <p:column headerText="#{generalProperties['tbl.activo']}" filterBy="#{item.activo}" sortBy="#{item.activo}" filterMatchMode="startsWith">
                          <h:outputText value="#{item.activo}" />
         </p:column>
  
-        <p:column headerText="Descripcion" filterBy="#{item.descripcion}" sortBy="#{item.descripcion}" filterMatchMode="startsWith">
+            <p:column headerText="#{generalProperties['tbl.descripcion']}" filterBy="#{item.descripcion}" sortBy="#{item.descripcion}" filterMatchMode="startsWith">
             
             <h:outputText value="#{item.descripcion}" />
         </p:column>

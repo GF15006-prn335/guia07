@@ -15,8 +15,8 @@
     <cc:implementation>
         
        
-     <p:commandButton  value="Editar" actionListener="#{cc.attrs.manageBean.modificar()}"  update="@all"/>
-     <p:commandButton  value="Eliminar" actionListener="#{cc.attrs.manageBean.eliminar()}"  update="@all"/>
+        <p:commandButton  value="#{generalProperties['btn.editar']}" actionListener="#{cc.attrs.manageBean.modificar()}"  update="@all"/>
+        <p:commandButton  value="#{generalProperties['btn.eliminar']}" actionListener="#{cc.attrs.manageBean.eliminar()}"  update="@all"/>
      
     </cc:implementation>
 </html>

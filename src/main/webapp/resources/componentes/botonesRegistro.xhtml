@@ -13,7 +13,7 @@
 
     <!-- IMPLEMENTATION -->
     <cc:implementation>
-        <p:commandButton  value="Nuevo" actionListener="#{cc.attrs.managedBean.nuevo()}" update="@all"/>
-        <p:commandButton  value="Cancelar" actionListener="#{cc.attrs.managedBean.cancelar()}" update="@all"/>
+        <p:commandButton  value="#{generalProperties['btn.nuevo']}" actionListener="#{cc.attrs.managedBean.nuevo()}" update="@all"/>
+        <p:commandButton  value="#{generalProperties['btn.cancelar']}" actionListener="#{cc.attrs.managedBean.cancelar()}" immediate="true" update="@all"/>
     </cc:implementation>
 </html>
